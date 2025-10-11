@@ -42,7 +42,7 @@ export default function Footer() {
               <li>Cortinas sob medida</li>
               <li>Reforma de estofados</li>
               <li>Persianas</li>
-              <li>Papel de parede</li>
+              
             </ul>
           </div>
           
