@@ -18,9 +18,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Porto Rico - Logística Internacional",
-  description: "Especialistas em soluções logísticas e comércio exterior. Transporte internacional, gestão aduaneira e rastreamento em tempo real.",
-  keywords: "logística, transporte internacional, importação, exportação, comércio exterior",
+  title: "Porto Rico - Decorações.",
+  description: "Decoração de cortinas e estofados, moveis sob medida, persianas.",
+  keywords: "cortinas, estofados, moveis, persianas",
 };
 
 export default function RootLayout({
