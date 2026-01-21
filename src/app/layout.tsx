@@ -1,26 +1,27 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Playfair_Display, Lato } from "next/font/google";
 import "./globals.css";
 import Header from "../components/Header";
-import Hero from "../components/Hero";
-import About from "../components/About";
-import Contact from "../components/Contact";
 import Footer from "../components/Footer";
+import WhatsAppButton from "../components/WhatsAppButton";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const playfair = Playfair_Display({
+  variable: "--font-playfair",
   subsets: ["latin"],
+  display: "swap",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const lato = Lato({
+  variable: "--font-lato",
+  weight: ["300", "400", "700"],
   subsets: ["latin"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "Porto Rico - Decorações.",
-  description: "Decoração de cortinas e estofados, moveis sob medida, persianas.",
-  keywords: "cortinas, estofados, moveis, persianas",
+  title: "Porto Rico Decorações - Design de Interiores e Estofados",
+  description: "Transformando ambientes com cortinas sob medida e reforma de estofados.",
+  keywords: "cortinas, estofados, moveis, persianas, decoração, design de interiores",
 };
 
 export default function RootLayout({
@@ -30,12 +31,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
+      <head>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+      </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${playfair.variable} ${lato.variable} bg-background-light text-text-light font-body antialiased transition-colors duration-300`}
       >
         <Header />
         {children}
         <Footer />
+        <WhatsAppButton />
       </body>
     </html>
   );

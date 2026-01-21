@@ -3,39 +3,46 @@ import Image from 'next/image';
 import HeroImage from '../img/Img.png';
 
 export default function Hero() {
+  const currentYear = new Date().getFullYear();
+  const yearsInBusiness = currentYear - 2002;
+
   return (
-    <section id="inicio" className="pt-20 bg-gray-50">
-      <div className="container mx-auto px-4 py-16">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          {/* Texto */}
-          <div>
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Seu conforto tem nome
+    <section id="inicio" className="relative pt-12 pb-20 lg:pt-24 lg:pb-32 overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="lg:grid lg:grid-cols-12 lg:gap-16 items-center">
+          <div className="lg:col-span-5 text-center lg:text-left mb-12 lg:mb-0">
+            <div className="inline-block px-4 py-1.5 mb-6 rounded-full bg-secondary/10 border border-secondary/20">
+              <span className="text-secondary font-semibold text-sm tracking-widest uppercase">Desde 2002</span>
+            </div>
+            <h1 className="text-5xl lg:text-6xl font-display font-bold text-primary leading-tight mb-6">
+              Seu conforto <br /><span className="text-secondary italic">tem nome</span>
             </h1>
-            <p className="text-lg text-gray-600 mb-8">
-              Há 35 anos transformando ambientes com cortinas sob medida e reforma de estofados,
-              sempre com uma equipe de profissionais qualificados.
+            <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+              Há {yearsInBusiness} anos transformando ambientes com cortinas sob medida e reforma de estofados, unindo tradição e sofisticação para o seu lar.
             </p>
-            <Link
-              href="#contato"
-              className="inline-block bg-[#0A4D3C] text-white px-8 py-3 rounded hover:bg-[#083829] transition-colors"
-            >
-              Agendar um horário
-            </Link>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+              <Link href="#contato" className="bg-primary text-white px-6 py-3 rounded-full font-semibold text-base hover:bg-primary-dark transition-all shadow-lg hover:shadow-primary/30 flex items-center justify-center gap-2">
+                Agendar um horário
+                <span className="material-icons-outlined text-sm">arrow_forward</span>
+              </Link>
+              <Link href="#servicos" className="bg-white text-primary border border-gray-200 px-6 py-3 rounded-full font-semibold text-base hover:bg-gray-50 transition-all flex items-center justify-center">
+                Nossos serviços
+              </Link>
+            </div>
           </div>
-
-          {/* Imagem com fundo deslocado */}
-          <div className="relative flex justify-center">
-            {/* Retângulo de fundo bege */}
-            <div className="absolute bottom-6 left-6 w-full h-full bg-[#C4A574] rounded-md"></div>
-
-            {/* Imagem principal */}
-            <div className="relative z-10">
+          <div className="lg:col-span-7 relative">
+            <div className="absolute -top-10 -right-10 w-64 h-64 bg-secondary/20 rounded-full blur-3xl"></div>
+            <div className="absolute -bottom-10 -left-10 w-64 h-64 bg-primary/10 rounded-full blur-3xl"></div>
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white transform rotate-2 hover:rotate-0 transition-transform duration-700 ease-out">
               <Image
                 src={HeroImage}
                 alt="Ambiente decorado Porto Rico"
-                className="rounded-md shadow-xl w-full object-cover"
+                className="w-full h-[500px] object-cover"
               />
+              <div className="absolute bottom-6 left-6 bg-white/90 backdrop-blur-sm p-4 rounded-xl shadow-lg max-w-xs border-l-4 border-primary">
+                <p className="font-display font-bold text-primary text-lg">Excelência</p>
+                <p className="text-sm text-gray-600">Acabamentos perfeitos e materiais nobres para clientes exigentes.</p>
+              </div>
             </div>
           </div>
         </div>

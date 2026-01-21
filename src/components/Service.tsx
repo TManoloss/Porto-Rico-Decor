@@ -1,44 +1,61 @@
 
 
-// components/Services.tsx
-import { ServiceCard } from './ServiceCard';
+import Image from 'next/image';
 import CortinaIcon from '../img/icon-curtain 1.png';
 import EstofadosIcon from '../img/couch-sofa-icon 1.png';
 import ManutencaoIcon from '../img/repairing-icon 1.png';
 
 export default function Services() {
+  const currentYear = new Date().getFullYear();
+  const yearsInBusiness = currentYear - 2002;
+
   return (
-    <section id="servicos" className="py-20 bg-gray-50">
-      <div className="container mx-auto px-4">
-        {/* Cabeçalho da seção */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            Serviços
-          </h2>
-          <p className="text-gray-600 max-w-3xl mx-auto">
-            Com mais de 20 anos no mercado, a <span className="font-semibold">Porto Rico Decorações</span> já conquistou clientes em toda Grande São Paulo com seus serviços especializados e de alta qualidade
+    <section id="servicos" className="py-24 bg-background-light">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center max-w-3xl mx-auto mb-16">
+          <span className="text-secondary font-bold tracking-wider uppercase text-sm">O que fazemos</span>
+          <h2 className="text-4xl font-display font-bold text-primary mt-2 mb-6">Nossos Serviços Especializados</h2>
+          <p className="text-gray-600 text-lg">
+            Com mais de {yearsInBusiness} anos no mercado, a Porto Rico Decorações já conquistou clientes em toda Grande São Paulo com serviços de alta qualidade.
           </p>
         </div>
-        
-        {/* Grid de serviços */}
-        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-          <ServiceCard
-            image={CortinaIcon}
-            title="Cortinas"
-            description="Terapia completa para ossos, cabeludo e fios, protegendo todos os tipos de cabelos, inclusive os longos e finos."
-          />
+        <div className="grid md:grid-cols-3 gap-8">
+          {/* Cortinas */}
+          <div className="bg-white rounded-2xl p-8 shadow-soft hover:shadow-xl transition-all duration-300 group border border-gray-100">
+            <div className="w-16 h-16 bg-accent-light rounded-full flex items-center justify-center mb-6 group-hover:bg-primary transition-colors duration-300">
+              <Image src={CortinaIcon} alt="Cortinas" className="w-8 h-8 object-contain" />
+            </div>
+            <h3 className="text-2xl font-display font-bold text-primary mb-4">Cortinas</h3>
+            <p className="text-gray-600 leading-relaxed mb-6">
+              Terapia completa para ossos, cabeludo e fios, protegendo todos os tipos de ambientes, inclusive os mais amplos e sofisticados.
+            </p>
+            <div className="w-16 h-1 bg-secondary rounded-full"></div>
+          </div>
 
-          <ServiceCard
-            image={EstofadosIcon}
-            title="Estofados"
-            description="A nossa equipe é repleta de profissionais renomados, famosos por lançarem tendências com cortes diferenciados e clássicos."
-          />
+          {/* Estofados */}
+          <div className="bg-white rounded-2xl p-8 shadow-soft hover:shadow-xl transition-all duration-300 group border border-gray-100 relative transform md:-translate-y-4">
+            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary to-secondary rounded-t-2xl"></div>
+            <div className="w-16 h-16 bg-accent-light rounded-full flex items-center justify-center mb-6 group-hover:bg-primary transition-colors duration-300">
+              <Image src={EstofadosIcon} alt="Estofados" className="w-8 h-8 object-contain" />
+            </div>
+            <h3 className="text-2xl font-display font-bold text-primary mb-4">Estofados</h3>
+            <p className="text-gray-600 leading-relaxed mb-6">
+              A nossa equipe é repleta de profissionais renomados, famosos por lançarem tendências com cortes diferenciados e clássicos em estofaria.
+            </p>
+            <div className="w-16 h-1 bg-secondary rounded-full"></div>
+          </div>
 
-          <ServiceCard
-            image={ManutencaoIcon}
-            title="Manutenção"
-            description="O Desembaraço conta com diversos tratamentos naturais e totalmente veganos, para qualquer tipo de cabelo."
-          />
+          {/* Manutenção */}
+          <div className="bg-white rounded-2xl p-8 shadow-soft hover:shadow-xl transition-all duration-300 group border border-gray-100">
+            <div className="w-16 h-16 bg-accent-light rounded-full flex items-center justify-center mb-6 group-hover:bg-primary transition-colors duration-300">
+              <Image src={ManutencaoIcon} alt="Manutenção" className="w-8 h-8 object-contain" />
+            </div>
+            <h3 className="text-2xl font-display font-bold text-primary mb-4">Manutenção</h3>
+            <p className="text-gray-600 leading-relaxed mb-6">
+              O serviço conta com diversos tratamentos naturais e técnicos especializados para qualquer tipo de reparo em seus móveis e cortinas.
+            </p>
+            <div className="w-16 h-1 bg-secondary rounded-full"></div>
+          </div>
         </div>
       </div>
     </section>
