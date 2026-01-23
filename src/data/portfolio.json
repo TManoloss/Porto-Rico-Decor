@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "image": "project1.jpg",
+        "location": "Apartamento Jardins",
+        "service": "Cortinas de Linho",
+        "category": "cortinas e persianas"
+    },
+    {
+        "id": 2,
+        "image": "project2.jpg",
+        "location": "Residência Morumbi",
+        "service": "Reforma Sofá Chesterfield",
+        "category": "tapeçaria"
+    },
+    {
+        "id": 3,
+        "image": "project3.jpg",
+        "location": "Consultório Médico",
+        "service": "Restauração Poltronas",
+        "category": "tapeçaria"
+    },
+    {
+        "id": 4,
+        "image": "project1.jpg",
+        "location": "Cobertura Itaim",
+        "service": "Persianas Automatizadas",
+        "category": "cortinas e persianas"
+    },
+    {
+        "id": 5,
+        "image": "project2.jpg",
+        "location": "Casa de Campo",
+        "service": "Cabeceira Estofada",
+        "category": "cabeceiras de cama"
+    },
+    {
+        "id": 6,
+        "image": "project3.jpg",
+        "location": "Escritório Piracicaba",
+        "service": "Cortinas Blackout",
+        "category": "cortinas e persianas"
+    }
+]

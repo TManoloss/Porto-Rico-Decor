@@ -10,7 +10,7 @@ export default function Portfolio() {
                         <h2 className="text-4xl font-display font-bold text-primary">Nosso Portfólio</h2>
                         <p className="text-gray-600 mt-2">Veja alguns de nossos projetos recentes</p>
                     </div>
-                    <a href="#" className="hidden md:inline-flex items-center gap-2 text-primary font-semibold hover:underline mt-4 md:mt-0">
+                    <a href="/portfolio" className="hidden md:inline-flex items-center gap-2 text-primary font-semibold hover:underline mt-4 md:mt-0">
                         Ver galeria completa <span className="material-icons-outlined text-sm">arrow_forward</span>
                     </a>
                 </div>
@@ -57,7 +57,7 @@ export default function Portfolio() {
                 </div>
 
                 <div className="mt-8 text-center md:hidden">
-                    <a href="#" className="inline-flex items-center gap-2 text-primary font-semibold hover:underline">
+                    <a href="/portfolio" className="inline-flex items-center gap-2 text-primary font-semibold hover:underline">
                         Ver galeria completa <span className="material-icons-outlined text-sm">arrow_forward</span>
                     </a>
                 </div>

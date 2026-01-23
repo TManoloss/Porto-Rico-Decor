@@ -31,6 +31,7 @@ export default function Header() {
             <Link href="#inicio" className="text-text-light hover:text-primary font-medium transition-colors">Início</Link>
             <Link href="#sobre" className="text-text-light hover:text-primary font-medium transition-colors">Sobre</Link>
             <Link href="#servicos" className="text-text-light hover:text-primary font-medium transition-colors">Serviços</Link>
+            <Link href="/portfolio" className="text-text-light hover:text-primary font-medium transition-colors">Portfólio</Link>
             <Link href="#clientes" className="text-text-light hover:text-primary font-medium transition-colors">Clientes</Link>
             <Link href="#contato" className="bg-primary hover:bg-primary-dark text-white px-5 py-2.5 rounded-full font-medium transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
               Contato
@@ -55,6 +56,7 @@ export default function Header() {
             <Link href="#inicio" className="block px-3 py-2 rounded-md text-base font-medium text-text-light hover:text-primary hover:bg-gray-50">Início</Link>
             <Link href="#sobre" className="block px-3 py-2 rounded-md text-base font-medium text-text-light hover:text-primary hover:bg-gray-50">Sobre</Link>
             <Link href="#servicos" className="block px-3 py-2 rounded-md text-base font-medium text-text-light hover:text-primary hover:bg-gray-50">Serviços</Link>
+            <Link href="/portfolio" className="block px-3 py-2 rounded-md text-base font-medium text-text-light hover:text-primary hover:bg-gray-50">Portfólio</Link>
             <Link href="#clientes" className="block px-3 py-2 rounded-md text-base font-medium text-text-light hover:text-primary hover:bg-gray-50">Clientes</Link>
             <Link href="#contato" className="block px-3 py-2 rounded-md text-base font-medium text-primary font-bold">Contato</Link>
           </div>
