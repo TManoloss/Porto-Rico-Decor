@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useState } from "react";
 import Logo from "../../public/logos/Logotipo Principal Porto Rico 02.png";
-import AboutImage from "../img/Img.png";
+import AboutImage from "../PORTO RICO Visual/Porto Rico 03.jpg";
 import Image01 from "../PORTO RICO Visual/Porto Rico 01.jpg";
 import Image02 from "../PORTO RICO Visual/Porto Rico 02.jpg";
 
