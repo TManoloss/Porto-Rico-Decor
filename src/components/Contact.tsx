@@ -1,5 +1,7 @@
 'use client';
+
 import { useState } from 'react';
+import { sendEmail } from '../app/actions';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -8,11 +10,27 @@ export default function Contact() {
     phone: '',
     message: ''
   });
+  const [status, setStatus] = useState<{ success?: boolean; message?: string } | null>(null);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Implement form submission logic here
-    console.log('Form submitted:', formData);
+    setIsSubmitting(true);
+    setStatus(null);
+
+    const data = new FormData();
+    data.append('name', formData.name);
+    data.append('email', formData.email);
+    data.append('phone', formData.phone);
+    data.append('message', formData.message);
+
+    const result = await sendEmail(data);
+    setStatus(result);
+    setIsSubmitting(false);
+
+    if (result.success) {
+      setFormData({ name: '', email: '', phone: '', message: '' });
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -78,6 +96,7 @@ export default function Contact() {
                   value={formData.name}
                   onChange={handleChange}
                   placeholder="Seu nome"
+                  required
                   className="w-full px-4 py-3 rounded-lg bg-white border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all placeholder-gray-400"
                 />
               </div>
@@ -92,6 +111,7 @@ export default function Contact() {
                     value={formData.email}
                     onChange={handleChange}
                     placeholder="seu@email.com"
+                    required
                     className="w-full px-4 py-3 rounded-lg bg-white border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all placeholder-gray-400"
                   />
                 </div>
@@ -118,15 +138,23 @@ export default function Contact() {
                   onChange={handleChange}
                   rows={4}
                   placeholder="Como podemos ajudar?"
+                  required
                   className="w-full px-4 py-3 rounded-lg bg-white border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all placeholder-gray-400"
                 ></textarea>
               </div>
 
+              {status && (
+                <div className={`p-4 rounded-lg ${status.success ? 'bg-green-50 text-green-800' : 'bg-red-50 text-red-800'}`}>
+                  {status.message}
+                </div>
+              )}
+
               <button
                 type="submit"
-                className="w-full bg-primary hover:bg-primary-dark text-white font-bold py-4 rounded-none shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-0.5"
+                disabled={isSubmitting}
+                className={`w-full bg-primary hover:bg-primary-dark text-white font-bold py-4 rounded-none shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-0.5 ${isSubmitting ? 'opacity-70 cursor-not-allowed' : ''}`}
               >
-                Enviar Mensagem
+                {isSubmitting ? 'Enviando...' : 'Enviar Mensagem'}
               </button>
             </form>
           </div>

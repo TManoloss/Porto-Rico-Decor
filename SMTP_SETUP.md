@@ -16,7 +16,7 @@ SMTP_TO=contato@portoricodecor.com
 
 **Nota:**
 - `SMTP_SECURE`: Use `true` se a porta for 465, caso contrário use `false`.
-- `SMTP_TO`: O endereço de email que receberá as mensagens do formulário.
+- `SMTP_TO`: O endereço de email que receberá as mensagens do formulário. Para múltiplos destinatários, separe por vírgula (ex: `email1@teste.com, email2@teste.com`).
 
 ## Configuração na Vercel
 
