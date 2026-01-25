@@ -5,7 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 const heroImages = [
-  '/heroImages/IMG-20230418-WA0036_enhanced.jpg',
+
   '/heroImages/IMG-20230418-WA0037_enhanced.jpg',
   '/heroImages/IMG_20220923_190610_983_enhanced.jpg',
   '/heroImages/Screenshot_20260122-125452.Instagram_enhanced.jpg',
