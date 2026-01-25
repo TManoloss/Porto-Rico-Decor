@@ -19,7 +19,7 @@ export default function Footer() {
               />
             </div>
             <p className="text-gray-300 text-sm leading-relaxed mb-6">
-              Transformando ambientes há {yearsInBusiness} anos com qualidade, dedicação e um toque de sofisticação que sua casa merece.
+              Há {yearsInBusiness} anos transformando ambientes  com qualidade, dedicação e o toque de sofisticação que seu ambiente merece.
             </p>
           </div>
           <div>

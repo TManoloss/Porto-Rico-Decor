@@ -18,14 +18,14 @@ export default function Hero() {
               Seu conforto <br /><span className="text-secondary italic">tem nome</span>
             </h1>
             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-              Há {yearsInBusiness} anos transformando ambientes com cortinas sob medida e reforma de estofados, unindo tradição e sofisticação para o seu lar.
+              Há {yearsInBusiness} anos transformando ambientes com cortinas sob medida, confecção e reforma de estofados, unindo tradição e sofisticação para o seu lar.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <Link href="#contato" className="bg-primary text-white px-6 py-3 rounded-full font-semibold text-base hover:bg-primary-dark transition-all shadow-lg hover:shadow-primary/30 flex items-center justify-center gap-2">
+              <Link href="#contato" className="bg-primary text-white px-6 py-3 rounded-none font-semibold text-base hover:bg-primary-dark transition-all shadow-lg hover:shadow-primary/30 flex items-center justify-center gap-2">
                 Agendar um horário
                 <span className="material-icons-outlined text-sm">arrow_forward</span>
               </Link>
-              <Link href="#servicos" className="bg-white text-primary border border-gray-200 px-6 py-3 rounded-full font-semibold text-base hover:bg-gray-50 transition-all flex items-center justify-center">
+              <Link href="#servicos" className="bg-white text-primary border border-primary px-6 py-3 rounded-none font-semibold text-base hover:bg-gray-50 transition-all flex items-center justify-center">
                 Nossos serviços
               </Link>
             </div>
@@ -41,7 +41,7 @@ export default function Hero() {
               />
               <div className="absolute bottom-6 left-6 bg-white/90 backdrop-blur-sm p-4 rounded-xl shadow-lg max-w-xs border-l-4 border-primary">
                 <p className="font-display font-bold text-primary text-lg">Excelência</p>
-                <p className="text-sm text-gray-600">Acabamentos perfeitos e materiais nobres para clientes exigentes.</p>
+                <p className="text-sm text-gray-600">Acabamentos perfeitos com materiais nobres para clientes exigentes.</p>
               </div>
             </div>
           </div>

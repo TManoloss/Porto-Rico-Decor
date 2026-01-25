@@ -1,44 +1,373 @@
 [
     {
         "id": 1,
-        "image": "project1.jpg",
-        "location": "Apartamento Jardins",
-        "service": "Cortinas de Linho",
-        "category": "cortinas e persianas"
-    },
-    {
-        "id": 2,
-        "image": "project2.jpg",
-        "location": "Residência Morumbi",
-        "service": "Reforma Sofá Chesterfield",
+        "image": "FB_IMG_1591396359737.jpg",
+        "location": "Alto de Pinheiros",
+        "service": "Capa sob medida",
         "category": "tapeçaria"
     },
     {
+        "id": 2,
+        "image": "FB_IMG_1591396511623_enhanced.jpg",
+        "location": "Perdizes",
+        "service": "Painel de cabeceira estofado",
+        "category": "cabeceiras de cama"
+    },
+    {
         "id": 3,
-        "image": "project3.jpg",
-        "location": "Consultório Médico",
-        "service": "Restauração Poltronas",
+        "image": "IMG-20230418-WA0036_enhanced.jpg",
+        "location": "Brooklim",
+        "service": "Reforma de poltronas",
         "category": "tapeçaria"
     },
     {
         "id": 4,
-        "image": "project1.jpg",
-        "location": "Cobertura Itaim",
-        "service": "Persianas Automatizadas",
-        "category": "cortinas e persianas"
+        "image": "IMG-20230418-WA0037_enhanced.jpg",
+        "location": "Itaim Bibi",
+        "service": "Reforma de poltronas com capitonê",
+        "category": "tapeçaria"
     },
     {
         "id": 5,
-        "image": "project2.jpg",
-        "location": "Casa de Campo",
-        "service": "Cabeceira Estofada",
-        "category": "cabeceiras de cama"
+        "image": "IMG-20230814-WA0020_enhanced.jpg",
+        "location": "Shopping Morumbi",
+        "service": "Pufe com encostos móvel, produção própria",
+        "category": "tapeçaria"
     },
     {
         "id": 6,
-        "image": "project3.jpg",
-        "location": "Escritório Piracicaba",
-        "service": "Cortinas Blackout",
+        "image": "IMG_20220815_145607485_enhanced.jpg",
+        "location": "Santa Cecilia",
+        "service": "Painel de cabeceira estofado com tachas fumê",
+        "category": "cabeceiras de cama"
+    },
+    {
+        "id": 7,
+        "image": "IMG_20220923_190610_983_enhanced.jpg",
+        "location": "Higienópolis",
+        "service": "Painel de cabeceira estofado",
+        "category": "cabeceiras de cama"
+    },
+    {
+        "id": 8,
+        "image": "IMG_20230518_113657397_enhanced.jpg",
+        "location": "Vila Mariana",
+        "service": "Marcenaria",
+        "category": "cabeceiras de cama"
+    },
+    {
+        "id": 9,
+        "image": "IMG_20230607_085517392_enhanced.jpg",
+        "location": "Vila Mariana",
+        "service": "Painel de cabeceira estofado",
+        "category": "cabeceiras de cama"
+    },
+    {
+        "id": 10,
+        "image": "Screenshot_20260122-125212.Instagram_enhanced.jpg",
+        "location": "Itaim Bibi",
+        "service": "Reforma de sofá modular",
+        "category": "tapeçaria"
+    },
+    {
+        "id": 11,
+        "image": "Screenshot_20260122-125306.Instagram_enhanced.jpg",
+        "location": "Santa Cecilia",
+        "service": "Restauração de poltrona provençal",
+        "category": "tapeçaria"
+    },
+    {
+        "id": 12,
+        "image": "Screenshot_20260122-125352.Instagram_enhanced.jpg",
+        "location": "Vila Prudente",
+        "service": "Reforma de sofá retrátil",
+        "category": "tapeçaria"
+    },
+    {
+        "id": 13,
+        "image": "Screenshot_20260122-125452.Instagram_enhanced.jpg",
+        "location": "Brooklim",
+        "service": "Cortina sob medida, para sala, produção própria",
         "category": "cortinas e persianas"
+    },
+    {
+        "id": 14,
+        "image": "Screenshot_20260122-125547.Instagram_enhanced.jpg",
+        "location": "Shopping Pátio Higienópolis",
+        "service": "Cortina de Provador, loja Richard's, produção própria",
+        "category": "cortinas e persianas"
+    },
+    {
+        "id": 15,
+        "image": "Screenshot_20260122-125636.Instagram_enhanced.jpg",
+        "location": "Pinheiros",
+        "service": "Sofá sob medida, produção própria",
+        "category": "tapeçaria"
+    },
+    {
+        "id": 16,
+        "image": "Screenshot_20260122-125728.Instagram_enhanced.jpg",
+        "location": "Vila Mariana",
+        "service": "Persiana horizontal de madeira",
+        "category": "cortinas e persianas"
+    },
+    {
+        "id": 17,
+        "image": "Screenshot_20260122-125831.Instagram_enhanced.jpg",
+        "location": "Vila Mariana",
+        "service": "Painel de cabeceira estofado",
+        "category": "cabeceiras de cama"
+    },
+    {
+        "id": 18,
+        "image": "Screenshot_20260122-125906.Instagram_enhanced.jpg",
+        "location": "Perdizes",
+        "service": "Reforma de poltrona",
+        "category": "tapeçaria"
+    },
+    {
+        "id": 19,
+        "image": "Screenshot_20260122-130011.Instagram_enhanced.jpg",
+        "location": "Brooklim",
+        "service": "Cortina sob medida",
+        "category": "cortinas e persianas"
+    },
+    {
+        "id": 20,
+        "image": "Screenshot_20260122-130102.Instagram_enhanced.jpg",
+        "location": "Santa Cecilia",
+        "service": "Banco estofado para bares e restaurantes, produção própria - Rede Biroska",
+        "category": "tapeçaria"
+    },
+    {
+        "id": 21,
+        "image": "Screenshot_20260122-130141.Instagram_enhanced.jpg",
+        "location": "Santa Cecilia",
+        "service": "Banco estofado para bares e restaurantes, produção própria - Rede Biroska",
+        "category": "cabeceiras de cama"
+    },
+    {
+        "id": 22,
+        "image": "Screenshot_20260122-130219.Instagram_enhanced.jpg",
+        "location": "Jardim Paulistano",
+        "service": "Reforma de sofá",
+        "category": "tapeçaria"
+    },
+    {
+        "id": 23,
+        "image": "Screenshot_20260122-130254.Instagram_enhanced.jpg",
+        "location": "Jardins",
+        "service": "Reforma sofá e poltrona - Loja Richard's Oscar Freire",
+        "category": "tapeçaria"
+    },
+    {
+        "id": 24,
+        "image": "Screenshot_20260122-130342.Instagram_enhanced.jpg",
+        "location": "Higienópolis",
+        "service": "Reforma de sofá",
+        "category": "tapeçaria"
+    },
+    {
+        "id": 25,
+        "image": "Screenshot_20260122-130431.Instagram_enhanced.jpg",
+        "location": "Jardins",
+        "service": "Painel de cabeceira estofado",
+        "category": "cabeceiras de cama"
+    },
+    {
+        "id": 26,
+        "image": "Screenshot_20260122-130518.Instagram_enhanced.jpg",
+        "location": "Pinheiros",
+        "service": "Cortinas e sofá sob medida",
+        "category": "cortinas e persianas"
+    },
+    {
+        "id": 27,
+        "image": "Screenshot_20260122-130552.Instagram_enhanced.jpg",
+        "location": "Barra Funda",
+        "service": "Capa sob medida pa sofá",
+        "category": "tapeçaria"
+    },
+    {
+        "id": 28,
+        "image": "Screenshot_20260122-130645.Instagram_enhanced.jpg",
+        "location": "Pacaembú",
+        "service": "Estofado sob medida para escritório e quarto de hospede",
+        "category": "tapeçaria"
+    },
+    {
+        "id": 29,
+        "image": "Screenshot_20260122-130749.Instagram_enhanced.jpg",
+        "location": "Pompéia",
+        "service": "Painel de cabeceira estofado",
+        "category": "tapeçaria"
+    },
+    {
+        "id": 30,
+        "image": "Screenshot_20260122-130838.Instagram_enhanced.jpg",
+        "location": "Jardin Paulista",
+        "service": "Reforma de poltronas",
+        "category": "tapeçaria"
+    },
+    {
+        "id": 31,
+        "image": "Screenshot_20260122-130921.Instagram_enhanced.jpg",
+        "location": "Consolação",
+        "service": "Reforma de estofados",
+        "category": "tapeçaria"
+    },
+    {
+        "id": 32,
+        "image": "Screenshot_20260122-131019.Instagram_enhanced.jpg",
+        "location": "Morumbi",
+        "service": "Painel de cabeceira estofado",
+        "category": "tapeçaria"
+    },
+    {
+        "id": 33,
+        "image": "Screenshot_20260122-131459.Instagram_enhanced.jpg",
+        "location": "Alphavile 10",
+        "service": "Confecção de almofadas para poltronas",
+        "category": "tapeçaria"
+    },
+    {
+        "id": 34,
+        "image": "Screenshot_20260122-131608.Instagram_enhanced.jpg",
+        "location": "Cortinas e sofa sob medidas",
+        "service": "",
+        "category": "cortinas e persianas"
+    },
+    {
+        "id": 35,
+        "image": "Screenshot_20260122-131656.Instagram_enhanced.jpg",
+        "location": "Jardins",
+        "service": "Pinel de cabeceira estofado",
+        "category": "tapeçaria"
+    },
+    {
+        "id": 36,
+        "image": "Screenshot_20260122-133302.Instagram_enhanced.jpg",
+        "location": "Morumbi Shopping",
+        "service": "Sofá com encosto removível",
+        "category": "tapeçaria"
+    },
+    {
+        "id": 37,
+        "image": "Screenshot_20260122-133342.Instagram_enhanced.jpg",
+        "location": "Jardins",
+        "service": "Banco estofado sob medida, para sala de almoço",
+        "category": "tapeçaria"
+    },
+    {
+        "id": 38,
+        "image": "Screenshot_20260122-133428.Instagram_enhanced.jpg",
+        "location": "Vila Leopoldina",
+        "service": "Estofados sob medidas",
+        "category": "tapeçaria"
+    },
+    {
+        "id": 39,
+        "image": "Screenshot_20260122-133548.Instagram_enhanced.jpg",
+        "location": "Vila Nova Conceição",
+        "service": "Reforma de poltronas",
+        "category": "tapeçaria"
+    },
+    {
+        "id": 40,
+        "image": "Screenshot_20260122-133626.Instagram_enhanced.jpg",
+        "location": "Alphavile",
+        "service": "Sofá sob medida",
+        "category": "tapeçaria"
+    },
+    {
+        "id": 41,
+        "image": "Screenshot_20260122-133655.Instagram_enhanced.jpg",
+        "location": "Lapa",
+        "service": "Sofá sob Medida",
+        "category": "tapeçaria"
+    },
+    {
+        "id": 42,
+        "image": "Screenshot_20260122-133743.Instagram_enhanced.jpg",
+        "location": "Brooklim",
+        "service": "Reforma de cadeiras",
+        "category": "tapeçaria"
+    },
+    {
+        "id": 43,
+        "image": "Screenshot_20260122-133814.Instagram_enhanced.jpg",
+        "location": "Shopping Jk Iguatemi",
+        "service": "Estofado sob medida para loja Richard's",
+        "category": "tapeçaria"
+    },
+    {
+        "id": 44,
+        "image": "Screenshot_20260122-133840.Instagram_enhanced.jpg",
+        "location": "Pacaembú",
+        "service": "Cortina sob medida",
+        "category": "cortinas e persianas"
+    },
+    {
+        "id": 45,
+        "image": "Screenshot_20260122-133904.Instagram_enhanced.jpg",
+        "location": "Pacaembú",
+        "service": "Painel de cabeceira estofado",
+        "category": "cabeceiras de cama"
+    },
+    {
+        "id": 46,
+        "image": "Screenshot_20260122-134000.Instagram_enhanced.jpg",
+        "location": "Morumbi",
+        "service": "Cabeceira estofada",
+        "category": "cabeceiras de cama"
+    },
+    {
+        "id": 47,
+        "image": "Screenshot_20260122-134106.Instagram_enhanced.jpg",
+        "location": "República",
+        "service": "Reforma de sofá provençal",
+        "category": "tapeçaria"
+    },
+    {
+        "id": 48,
+        "image": "Screenshot_20260122-134157.Instagram_enhanced.jpg",
+        "location": "Consolação",
+        "service": "Almofadas para sofá",
+        "category": "tapeçaria"
+    },
+    {
+        "id": 49,
+        "image": "Screenshot_20260122-134306.Instagram_enhanced.jpg",
+        "location": "Consolação",
+        "service": "Cortina sob medida",
+        "category": "cortinas e persianas"
+    },
+    {
+        "id": 50,
+        "image": "Screenshot_20260122-134416.Instagram_enhanced.jpg",
+        "location": "Pompeia",
+        "service": "Sofá modular sob medida",
+        "category": "tapeçaria"
+    },
+    {
+        "id": 51,
+        "image": "Screenshot_20260122-134457.Instagram_enhanced.jpg",
+        "location": "Morumbi",
+        "service": "Estofamento para banco de copa",
+        "category": "tapeçaria"
+    },
+    {
+        "id": 52,
+        "image": "Screenshot_20260122-134538.Instagram_enhanced.jpg",
+        "location": "Santana",
+        "service": "Restauração de poltrona Luiz XV",
+        "category": "tapeçaria"
+    },
+    {
+        "id": 53,
+        "image": "Screenshot_20260122-134610.Instagram_enhanced.jpg",
+        "location": "Morumbi",
+        "service": "Sofá sob medida",
+        "category": "tapeçaria"
     }
 ]

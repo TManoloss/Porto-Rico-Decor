@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --background: #F9F9F7;
   --foreground: #333333;
@@ -35,7 +39,7 @@
   --color-accent-dark: var(--color-accent-dark);
 
   --font-display: var(--font-playfair);
-  --font-body: var(--font-lato);
+  --font-body: var(--font-montserrat);
 
   --shadow-soft: 0 10px 40px -10px rgba(0, 0, 0, 0.08);
 }

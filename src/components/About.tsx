@@ -78,18 +78,18 @@ export default function About() {
             {/* Tab Content */}
             <div className="min-h-[300px]">
               {activeTab === 'empresa' && (
-                <div className="space-y-6 text-gray-200 text-lg leading-relaxed animate-fadeIn">
+                <div className="space-y-6 text-gray-200 text-lg leading-relaxed animate-fadeIn text-justify">
                   <p>
-                    A Porto Rico Decorações tem preocupação afetiva em aprimorar seus conhecimentos, está sempre atenta às novas tendências de mercado e ao surgimento constante de modernas tecnologias, tanto de produtos como de serviços através da participação de cursos e seminários com os fabricantes.
+                    A Porto Rico Decorações tem preocupação efetiva em aprimorar seus conhecimentos, está sempre atenta às novas tendências de mercado e ao surgimento constante de modernas tecnologias, tanto para produtos quanto para serviços, através da participação em cursos e seminários com os fabricantes.
                   </p>
                   <p>
-                    Estamos prontos para lhe atender. Precisando decorar seu ambiente, controlar a luminosidade para o conforto do seu sono e proteger seus móveis dos raios UV? Conte conosco. Esperamos sua ligação, teremos um imenso prazer em fazermos uma visita para avaliar a sua necessidade! Nós levamos nossa loja até você!
+                    Estamos prontos para lhe atender. Precisando decorar seu ambiente, controlar a luminosidade para o conforto do seu sono e proteger seus móveis dos raios UV? Conte conosco. Esperamos sua ligação, teremos um imenso prazer em atendê-lo! Levamos nossa loja até você!
                   </p>
                 </div>
               )}
 
               {activeTab === 'historia' && (
-                <div className="space-y-6 text-gray-200 text-lg leading-relaxed animate-fadeIn">
+                <div className="space-y-6 text-gray-200 text-lg leading-relaxed animate-fadeIn text-justify">
                   <p>
                     Seu fundador, Manoel Carvalho, atua no ramo desde 1998, começando como auxiliar de projetos e ao longo do tempo foi galgando degraus de sucesso, chegando a gerenciar e dirigir grandes lojas do setor.
                   </p>
@@ -100,7 +100,7 @@ export default function About() {
               )}
 
               {activeTab === 'objetivo' && (
-                <div className="space-y-6 text-gray-200 text-lg leading-relaxed animate-fadeIn">
+                <div className="space-y-6 text-gray-200 text-lg leading-relaxed animate-fadeIn text-justify">
                   <p>
                     Apresentar soluções em design e conforto que garante a qualidade, eficiência, durabilidade, segurança e preços compatíveis sempre respaldadas em profissionalismo, competência e trabalho com as qualificações exigidas pelos clientes, decoradores e arquitetos.
                   </p>

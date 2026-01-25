@@ -27,7 +27,7 @@ export default function Services() {
             </div>
             <h3 className="text-2xl font-display font-bold text-primary mb-4">Cortinas</h3>
             <p className="text-gray-600 leading-relaxed mb-6">
-              Terapia completa para ossos, cabeludo e fios, protegendo todos os tipos de ambientes, inclusive os mais amplos e sofisticados.
+              Cortinas sob medida que transformam o ambiente — acabamento impecável, tecidos de qualidade e instalação profissional.
             </p>
             <div className="w-16 h-1 bg-secondary rounded-full"></div>
           </div>
@@ -40,7 +40,7 @@ export default function Services() {
             </div>
             <h3 className="text-2xl font-display font-bold text-primary mb-4">Estofados</h3>
             <p className="text-gray-600 leading-relaxed mb-6">
-              A nossa equipe é repleta de profissionais renomados, famosos por lançarem tendências com cortes diferenciados e clássicos em estofaria.
+              Estofados sob medida que unem conforto, durabilidade e design. Sofás, poltronas e cadeiras com acabamento profissional, tecidos de qualidade e atenção a cada detalhe.
             </p>
             <div className="w-16 h-1 bg-secondary rounded-full"></div>
           </div>
@@ -52,7 +52,7 @@ export default function Services() {
             </div>
             <h3 className="text-2xl font-display font-bold text-primary mb-4">Manutenção</h3>
             <p className="text-gray-600 leading-relaxed mb-6">
-              O serviço conta com diversos tratamentos naturais e técnicos especializados para qualquer tipo de reparo em seus móveis e cortinas.
+              Manutenção especializada: reparos, ajustes e revitalização para prolongar a vida útil e manter o visual dos seus ambientes.
             </p>
             <div className="w-16 h-1 bg-secondary rounded-full"></div>
           </div>

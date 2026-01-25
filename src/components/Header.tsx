@@ -2,11 +2,17 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import Logo1 from "../img/Logotipo Principal Porto Rico 01.png"
 import Logo2 from "@/PORTO RICO Visual/Porto Rico - Logotipo Secundário 01.png"
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const pathname = usePathname();
+
+  const getLinkHref = (sectionId: string) => {
+    return pathname === '/' ? `#${sectionId}` : `/#${sectionId}`;
+  };
 
   return (
     <nav className="sticky top-0 z-50 bg-background-light/95 backdrop-blur-md border-b border-gray-200 transition-colors duration-300">
@@ -28,12 +34,12 @@ export default function Header() {
           </div>
 
           <div className="hidden md:flex space-x-8 items-center">
-            <Link href="#inicio" className="text-text-light hover:text-primary font-medium transition-colors">Início</Link>
-            <Link href="#sobre" className="text-text-light hover:text-primary font-medium transition-colors">Sobre</Link>
-            <Link href="#servicos" className="text-text-light hover:text-primary font-medium transition-colors">Serviços</Link>
+            <Link href={getLinkHref('inicio')} className="text-text-light hover:text-primary font-medium transition-colors">Início</Link>
+            <Link href={getLinkHref('sobre')} className="text-text-light hover:text-primary font-medium transition-colors">Sobre</Link>
+            <Link href={getLinkHref('servicos')} className="text-text-light hover:text-primary font-medium transition-colors">Serviços</Link>
             <Link href="/portfolio" className="text-text-light hover:text-primary font-medium transition-colors">Portfólio</Link>
-            <Link href="#clientes" className="text-text-light hover:text-primary font-medium transition-colors">Clientes</Link>
-            <Link href="#contato" className="bg-primary hover:bg-primary-dark text-white px-5 py-2.5 rounded-full font-medium transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+            <Link href={getLinkHref('clientes')} className="text-text-light hover:text-primary font-medium transition-colors">Clientes</Link>
+            <Link href={getLinkHref('contato')} className="bg-primary hover:bg-primary-dark text-white px-5 py-2.5 rounded-none font-medium transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
               Contato
             </Link>
           </div>
@@ -53,12 +59,12 @@ export default function Header() {
       {isMenuOpen && (
         <div className="md:hidden bg-background-light border-t border-gray-200">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            <Link href="#inicio" className="block px-3 py-2 rounded-md text-base font-medium text-text-light hover:text-primary hover:bg-gray-50">Início</Link>
-            <Link href="#sobre" className="block px-3 py-2 rounded-md text-base font-medium text-text-light hover:text-primary hover:bg-gray-50">Sobre</Link>
-            <Link href="#servicos" className="block px-3 py-2 rounded-md text-base font-medium text-text-light hover:text-primary hover:bg-gray-50">Serviços</Link>
+            <Link href={getLinkHref('inicio')} className="block px-3 py-2 rounded-md text-base font-medium text-text-light hover:text-primary hover:bg-gray-50">Início</Link>
+            <Link href={getLinkHref('sobre')} className="block px-3 py-2 rounded-md text-base font-medium text-text-light hover:text-primary hover:bg-gray-50">Sobre</Link>
+            <Link href={getLinkHref('servicos')} className="block px-3 py-2 rounded-md text-base font-medium text-text-light hover:text-primary hover:bg-gray-50">Serviços</Link>
             <Link href="/portfolio" className="block px-3 py-2 rounded-md text-base font-medium text-text-light hover:text-primary hover:bg-gray-50">Portfólio</Link>
-            <Link href="#clientes" className="block px-3 py-2 rounded-md text-base font-medium text-text-light hover:text-primary hover:bg-gray-50">Clientes</Link>
-            <Link href="#contato" className="block px-3 py-2 rounded-md text-base font-medium text-primary font-bold">Contato</Link>
+            <Link href={getLinkHref('clientes')} className="block px-3 py-2 rounded-md text-base font-medium text-text-light hover:text-primary hover:bg-gray-50">Clientes</Link>
+            <Link href={getLinkHref('contato')} className="block px-3 py-2 rounded-md text-base font-medium text-primary font-bold">Contato</Link>
           </div>
         </div>
       )}

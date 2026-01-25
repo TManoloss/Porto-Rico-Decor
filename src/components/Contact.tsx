@@ -40,7 +40,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="font-bold text-lg text-primary">Endereço</h4>
-                  <p className="text-gray-600">Rua Sebastião Pereira 165<br />Santa Cecília, São Paulo, SP</p>
+                  <p className="text-gray-600">Rua Sebastião Pereira 165 - CEP 01225-020<br />Santa Cecília, São Paulo - SP </p>
                 </div>
               </div>
 
@@ -50,7 +50,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="font-bold text-lg text-primary">Telefone</h4>
-                  <p className="text-gray-600">(11) 997252-5052</p>
+                  <p className="text-gray-600">(11) 99752-5052</p>
                 </div>
               </div>
 
@@ -60,7 +60,8 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="font-bold text-lg text-primary">Email</h4>
-                  <p className="text-gray-600">contato@portorico.com.br</p>
+                  <p className="text-gray-600">contato@portoricodecor.com</p>
+                  <p className="text-gray-600">portoricodecor@hotmail.com</p>
                 </div>
               </div>
             </div>
@@ -123,7 +124,7 @@ export default function Contact() {
 
               <button
                 type="submit"
-                className="w-full bg-primary hover:bg-primary-dark text-white font-bold py-4 rounded-lg shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-0.5"
+                className="w-full bg-primary hover:bg-primary-dark text-white font-bold py-4 rounded-none shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-0.5"
               >
                 Enviar Mensagem
               </button>
