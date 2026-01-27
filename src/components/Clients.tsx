@@ -39,7 +39,7 @@ const clients = [
 
 export default function Clients() {
     return (
-        <section className="py-16 bg-white overflow-hidden">
+        <section id="clientes" className="py-16 bg-white overflow-hidden scroll-mt-24">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-10 text-center">
                 <h2 className="text-3xl font-display font-bold text-primary">Nossos Clientes</h2>
                 <p className="text-gray-600 mt-2">Empresas que confiam na nossa qualidade</p>

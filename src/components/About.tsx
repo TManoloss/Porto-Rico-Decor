@@ -50,7 +50,6 @@ export default function About() {
           </div>
 
           <div>
-            <h2 className="text-secondary font-display font-italic text-2xl mb-2">Sobre nós</h2>
             <h3 className="text-4xl lg:text-5xl font-display font-bold mb-8 leading-tight">Tradição em criar <br />ambientes únicos</h3>
 
             {/* Tabs Navigation */}
