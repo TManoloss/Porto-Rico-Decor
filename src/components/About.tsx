@@ -90,7 +90,7 @@ export default function About() {
               {activeTab === 'historia' && (
                 <div className="space-y-6 text-gray-200 text-lg leading-relaxed animate-fadeIn text-justify">
                   <p>
-                    Seu fundador, Manoel Carvalho, atua no ramo desde 1998, começando como auxiliar de projetos e ao longo do tempo foi galgando degraus de sucesso, chegando a gerenciar e dirigir grandes lojas do setor.
+                    Seu fundador, Manoel Carvalho, atua no ramo desde 2002, começando como auxiliar de projetos e ao longo do tempo foi galgando degraus de sucesso, chegando a gerenciar e dirigir grandes lojas do setor.
                   </p>
                   <p>
                     Mas seu espírito empreendedor queria alçar voos mais altos, foi assim que em 2002, junto com um sócio fundou a PORTO RICO DECORAÇÕES, logo após 06 meses adquiriu 100% da empresa, fruto de muito de trabalho e dedicação.
