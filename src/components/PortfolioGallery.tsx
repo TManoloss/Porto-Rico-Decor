@@ -89,7 +89,7 @@ export default function PortfolioGallery() {
                             alt={`${selectedProject.service} em ${selectedProject.location}`}
                             className="object-contain max-w-full max-h-[85vh]"
                         />
-                        <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 to-transparent p-8 text-white">
+                        <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t p-8 text-white">
                             <h3 className="text-3xl font-display font-bold mb-2">{selectedProject.service}</h3>
                             <p className="text-gray-300 text-lg flex items-center gap-2">
                                 <span className="material-icons-outlined text-secondary">place</span>
