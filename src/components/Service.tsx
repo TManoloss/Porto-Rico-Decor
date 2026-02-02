@@ -26,7 +26,7 @@ export default function Services() {
               <Image src={CortinaIcon} alt="Cortinas" className="w-8 h-8 object-contain" />
             </div>
             <h3 className="text-2xl font-display font-bold text-primary mb-4">Cortinas</h3>
-            <p className="text-gray-600 leading-relaxed mb-6">
+            <p className="text-gray-600 leading-relaxed mb-6 text-justify">
               Cortinas sob medida: design elegante, tecidos nobres e instalação precisa.
             </p>
             <div className="w-16 h-1 bg-secondary rounded-full"></div>
@@ -39,7 +39,7 @@ export default function Services() {
               <Image src={EstofadosIcon} alt="Estofados" className="w-8 h-8 object-contain" />
             </div>
             <h3 className="text-2xl font-display font-bold text-primary mb-4">Estofados</h3>
-            <p className="text-gray-600 leading-relaxed mb-6">
+            <p className="text-gray-600 leading-relaxed mb-6 text-justify">
               Sofás, poltronas e cadeiras sob medida com alto padrão de acabamento, qualidade superior e atenção a cada detalhe.
             </p>
             <div className="w-16 h-1 bg-secondary rounded-full"></div>
@@ -51,7 +51,7 @@ export default function Services() {
               <Image src={ManutencaoIcon} alt="Manutenção" className="w-8 h-8 object-contain" />
             </div>
             <h3 className="text-2xl font-display font-bold text-primary mb-4">Manutenção</h3>
-            <p className="text-gray-600 leading-relaxed mb-6">
+            <p className="text-gray-600 leading-relaxed mb-6 text-justify">
               Serviço de manutenção especializada que restaura, ajusta e revitaliza, preservando a elegância e a vida útil dos seus ambientes.
             </p>
             <div className="w-16 h-1 bg-secondary rounded-full"></div>
