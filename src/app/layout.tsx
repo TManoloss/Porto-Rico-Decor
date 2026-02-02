@@ -1,15 +1,9 @@
 import type { Metadata } from "next";
-import { Playfair_Display, Montserrat } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import "./globals.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import WhatsAppButton from "../components/WhatsAppButton";
-
-const playfair = Playfair_Display({
-  variable: "--font-playfair",
-  subsets: ["latin"],
-  display: "swap",
-});
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
@@ -35,7 +29,7 @@ export default function RootLayout({
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
       </head>
       <body
-        className={`${playfair.variable} ${montserrat.variable} bg-background-light text-text-light font-body antialiased transition-colors duration-300`}
+        className={`${montserrat.variable} bg-background-light text-text-light font-body antialiased transition-colors duration-300`}
       >
         <Header />
         {children}
