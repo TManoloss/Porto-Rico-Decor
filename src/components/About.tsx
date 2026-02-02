@@ -80,10 +80,14 @@ export default function About() {
               {activeTab === 'empresa' && (
                 <div className="space-y-6 text-gray-200 text-lg leading-relaxed animate-fadeIn text-justify">
                   <p>
-                    Comprometida com a excelência, a Porto Rico Decorações mantém uma busca contínua por conhecimento, acompanhando tendências e inovações tecnológicas em produtos e serviços, com foco em capacitação contínua junto aos fabricantes.
+                    Comprometida com a excelência, a Porto Rico Decorações mantém uma busca contínua por
+                    conhecimento, acompanhando tendências e inovações tecnológicas em produtos e serviços, com
+                    foco em capacitação contínua junto aos fabricantes.
                   </p>
                   <p>
-                    Prontos para cuidar do seu ambiente com estilo, conforto e proteção. Decoração personalizada, controle de luminosidade para o seu descanso e proteção UV para seus móveis. Conte conosco. Levamos nossa loja até você!
+                    Prontos para cuidar do seu ambiente com estilo, conforto e proteção. Decoração personalizada,
+                    controle de luminosidade para o seu descanso e proteção UV para seus móveis. Conte conosco.
+                    Levamos nossa loja até você!
                   </p>
                 </div>
               )}

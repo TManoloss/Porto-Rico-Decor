@@ -7,13 +7,12 @@ import Image from 'next/image';
 const heroImages = [
 
   '/heroImages/IMG-20230418-WA0037_enhanced.jpg',
-  // '/heroImages/IMG_20220923_190610_983_enhanced.jpg', // Removed orange chair (assumed oldest)
-  // Placeholder for new wall curtain image
+  '/heroImages/IMG_20220923_190610_983_enhanced.jpg',
   '/heroImages/Screenshot_20260122-125452.Instagram_enhanced.jpg',
   '/heroImages/Screenshot_20260122-130254.Instagram_enhanced.jpg',
   '/heroImages/Screenshot_20260122-130749.Instagram_enhanced.jpg',
   '/heroImages/Screenshot_20260122-133428.Instagram_enhanced.jpg',
-  '/heroImages/Screenshot_20260122-133743.Instagram_enhanced.jpg',
+  '/heroImages/Screenshot_20260122-134306.Instagram_enhanced.jpg',
 ];
 
 export default function Hero() {
