@@ -15,7 +15,8 @@ export default function Services() {
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl font-display font-bold text-primary mt-2 mb-6 uppercase tracking-wider">Nossos Serviços</h2>
           <p className="text-gray-600 text-lg text-justify max-w-4xl mx-auto">
-            Há mais de 24 anos no mercado, a Porto Rico Decorações se destaca pela excelência de seus serviços e pontualidade na entrega.
+            Há mais de 24 anos no mercado, a Porto Rico Decorações se destaca pela excelência de seus serviços
+            e pontualidade na entrega.
           </p>
         </div>
         <div className="grid md:grid-cols-3 gap-8">
@@ -26,7 +27,7 @@ export default function Services() {
             </div>
             <h3 className="text-2xl font-display font-bold text-primary mb-4">Cortinas</h3>
             <p className="text-gray-600 leading-relaxed mb-6">
-              Cortinas sob medida que transformam o ambiente — acabamento impecável, tecidos de qualidade e instalação profissional.
+              Cortinas sob medida: design elegante, tecidos nobres e instalação precisa.
             </p>
             <div className="w-16 h-1 bg-secondary rounded-full"></div>
           </div>
@@ -39,7 +40,7 @@ export default function Services() {
             </div>
             <h3 className="text-2xl font-display font-bold text-primary mb-4">Estofados</h3>
             <p className="text-gray-600 leading-relaxed mb-6">
-              Estofados sob medida que unem conforto, durabilidade e design. Sofás, poltronas e cadeiras com acabamento profissional, tecidos de qualidade e atenção a cada detalhe.
+              Sofás, poltronas e cadeiras sob medida com alto padrão de acabamento, qualidade superior e atenção a cada detalhe.
             </p>
             <div className="w-16 h-1 bg-secondary rounded-full"></div>
           </div>
@@ -51,7 +52,7 @@ export default function Services() {
             </div>
             <h3 className="text-2xl font-display font-bold text-primary mb-4">Manutenção</h3>
             <p className="text-gray-600 leading-relaxed mb-6">
-              Manutenção especializada: reparos, ajustes e revitalização para prolongar a vida útil e manter o visual dos seus ambientes.
+              Serviço de manutenção especializada que restaura, ajusta e revitaliza, preservando a elegância e a vida útil dos seus ambientes.
             </p>
             <div className="w-16 h-1 bg-secondary rounded-full"></div>
           </div>
