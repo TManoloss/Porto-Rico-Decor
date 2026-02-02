@@ -80,10 +80,35 @@ export default function PortfolioGallery() {
                         <span className="material-icons-outlined text-4xl">close</span>
                     </button>
 
+                    <button
+                        className="fixed left-4 md:left-8 top-1/2 -translate-y-1/2 text-white hover:text-secondary transition-colors z-50 p-2 bg-black/20 hover:bg-black/50 rounded-full md:bg-transparent md:hover:bg-transparent"
+                        onClick={(e) => {
+                            e.stopPropagation();
+                            const currentIndex = filteredProjects.findIndex(p => p.id === selectedProject.id);
+                            const prevIndex = (currentIndex - 1 + filteredProjects.length) % filteredProjects.length;
+                            setSelectedProject(filteredProjects[prevIndex]);
+                        }}
+                    >
+                        <span className="material-icons-outlined text-4xl md:text-6xl drop-shadow-lg">chevron_left</span>
+                    </button>
+
+                    <button
+                        className="fixed right-4 md:right-8 top-1/2 -translate-y-1/2 text-white hover:text-secondary transition-colors z-50 p-2 bg-black/20 hover:bg-black/50 rounded-full md:bg-transparent md:hover:bg-transparent"
+                        onClick={(e) => {
+                            e.stopPropagation();
+                            const currentIndex = filteredProjects.findIndex(p => p.id === selectedProject.id);
+                            const nextIndex = (currentIndex + 1) % filteredProjects.length;
+                            setSelectedProject(filteredProjects[nextIndex]);
+                        }}
+                    >
+                        <span className="material-icons-outlined text-4xl md:text-6xl drop-shadow-lg">chevron_right</span>
+                    </button>
+
                     <div
                         className="relative max-w-[90vw] max-h-[85vh] rounded-lg overflow-hidden flex flex-col"
                         onClick={(e) => e.stopPropagation()}
                     >
+
                         <img
                             src={`/portfolio/${selectedProject.image}`}
                             alt={`${selectedProject.service} em ${selectedProject.location}`}
