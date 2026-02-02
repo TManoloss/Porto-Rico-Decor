@@ -38,7 +38,7 @@ html {
   --color-accent-light: var(--color-accent-light);
   --color-accent-dark: var(--color-accent-dark);
 
-  --font-display: var(--font-playfair);
+  --font-display: var(--font-montserrat);
   --font-body: var(--font-montserrat);
 
   --shadow-soft: 0 10px 40px -10px rgba(0, 0, 0, 0.08);

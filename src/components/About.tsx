@@ -50,7 +50,8 @@ export default function About() {
           </div>
 
           <div>
-            <h3 className="text-4xl lg:text-5xl font-display font-bold mb-8 leading-tight">Tradição em criar <br />ambientes únicos</h3>
+            {/* <h3 className="text-4xl lg:text-5xl font-display font-bold mb-8 leading-tight">Tradição em criar <br />ambientes únicos</h3> */}
+            <div className="mb-8"></div>
 
             {/* Tabs Navigation */}
             <div className="flex flex-wrap gap-4 mb-8 border-b border-white/10 pb-4">
@@ -79,10 +80,10 @@ export default function About() {
               {activeTab === 'empresa' && (
                 <div className="space-y-6 text-gray-200 text-lg leading-relaxed animate-fadeIn text-justify">
                   <p>
-                    A Porto Rico Decorações tem preocupação efetiva em aprimorar seus conhecimentos, está sempre atenta às novas tendências de mercado e ao surgimento constante de modernas tecnologias, tanto para produtos quanto para serviços, através da participação em cursos e seminários com os fabricantes.
+                    Comprometida com a excelência, a Porto Rico Decorações mantém uma busca contínua por conhecimento, acompanhando tendências e inovações tecnológicas em produtos e serviços, com foco em capacitação contínua junto aos fabricantes.
                   </p>
                   <p>
-                    Estamos prontos para lhe atender. Precisando decorar seu ambiente, controlar a luminosidade para o conforto do seu sono e proteger seus móveis dos raios UV? Conte conosco. Esperamos sua ligação, teremos um imenso prazer em atendê-lo! Levamos nossa loja até você!
+                    Prontos para cuidar do seu ambiente com estilo, conforto e proteção. Decoração personalizada, controle de luminosidade para o seu descanso e proteção UV para seus móveis. Conte conosco. Levamos nossa loja até você!
                   </p>
                 </div>
               )}

@@ -7,7 +7,8 @@ import Image from 'next/image';
 const heroImages = [
 
   '/heroImages/IMG-20230418-WA0037_enhanced.jpg',
-  '/heroImages/IMG_20220923_190610_983_enhanced.jpg',
+  // '/heroImages/IMG_20220923_190610_983_enhanced.jpg', // Removed orange chair (assumed oldest)
+  // Placeholder for new wall curtain image
   '/heroImages/Screenshot_20260122-125452.Instagram_enhanced.jpg',
   '/heroImages/Screenshot_20260122-130254.Instagram_enhanced.jpg',
   '/heroImages/Screenshot_20260122-130749.Instagram_enhanced.jpg',
@@ -55,8 +56,8 @@ export default function Hero() {
 
       {/* Content */}
       <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
-        <p className="text-xl text-white mb-10 leading-relaxed max-w-4xl mx-auto drop-shadow-md">
-          Há {yearsInBusiness} anos transformando ambientes com cortinas sob medida, confecção e reforma de estofados, unindo tradição e sofisticação para o seu lar.
+        <p className="text-xl text-white mb-10 leading-relaxed max-w-4xl mx-auto drop-shadow-md text-justify sm:text-center">
+          “Há 24 anos criando ambientes únicos com cortinas sob medida e estofados personalizados, unindo tradição, conforto e sofisticação.”
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link href="#contato" className="bg-primary text-white px-8 py-4 rounded-none font-semibold text-lg hover:bg-primary-dark transition-all shadow-lg hover:shadow-primary/30 flex items-center justify-center gap-2">

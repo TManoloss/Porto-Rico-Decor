@@ -45,7 +45,7 @@ export default function Contact() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-16">
           <div>
-            <span className="text-secondary font-bold tracking-wider uppercase text-sm">Fale Conosco</span>
+            {/* <span className="text-secondary font-bold tracking-wider uppercase text-sm">Fale Conosco</span> */}
             <h2 className="text-4xl font-display font-bold text-primary mt-2 mb-6">Entre em Contato</h2>
             <p className="text-gray-600 text-lg mb-10">
               Agende uma visita e conheça nossas soluções personalizadas para o seu espaço.
