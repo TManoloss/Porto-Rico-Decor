@@ -51,31 +51,31 @@ export default function Contact() {
             </p>
 
             <div className="space-y-8">
-              <div className="flex items-start gap-4">
+              <div className="flex items-center gap-4">
                 <div className="bg-primary/10 p-3 w-12 h-12 flex items-center justify-center rounded-lg text-primary shrink-0">
                   <span className="material-icons-outlined text-2xl">location_on</span>
                 </div>
-                <div className="min-h-[5rem]">
+                <div className="min-h-[5rem] flex flex-col justify-center">
                   <h4 className="font-bold text-lg text-primary">Endereço</h4>
                   <p className="text-gray-600">Rua Sebastião Pereira 165 - CEP 01225-020<br />Santa Cecília, São Paulo - SP </p>
                 </div>
               </div>
 
-              <div className="flex items-start gap-4">
+              <div className="flex items-center gap-4">
                 <div className="bg-primary/10 p-3 w-12 h-12 flex items-center justify-center rounded-lg text-primary shrink-0">
                   <span className="material-icons-outlined text-2xl">phone</span>
                 </div>
-                <div className="min-h-[5rem]">
+                <div className="min-h-[5rem] flex flex-col justify-center">
                   <h4 className="font-bold text-lg text-primary">Telefone</h4>
                   <p className="text-gray-600">(11) 99752-5052<br />(11) 2367-8581</p>
                 </div>
               </div>
 
-              <div className="flex items-start gap-4">
+              <div className="flex items-center gap-4">
                 <div className="bg-primary/10 p-3 w-12 h-12 flex items-center justify-center rounded-lg text-primary shrink-0">
                   <span className="material-icons-outlined text-2xl">email</span>
                 </div>
-                <div className="min-h-[5rem]">
+                <div className="min-h-[5rem] flex flex-col justify-center">
                   <h4 className="font-bold text-lg text-primary">Email</h4>
                   <p className="text-gray-600">contato@portoricodecor.com<br />portoricodecor@hotmail.com</p>
                 </div>
