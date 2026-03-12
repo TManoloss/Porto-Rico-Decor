@@ -3,6 +3,12 @@
 import { useState } from 'react';
 import { sendEmail } from '../app/actions';
 
+declare global {
+  interface Window {
+    gtag?: (...args: unknown[]) => void;
+  }
+}
+
 export default function Contact() {
   const [formData, setFormData] = useState({
     name: '',
@@ -30,6 +36,13 @@ export default function Contact() {
 
     if (result.success) {
       setFormData({ name: '', email: '', phone: '', message: '' });
+
+      // Disparo do evento de conversão do Google Ads
+      if (typeof window !== 'undefined' && window.gtag) {
+        window.gtag('event', 'conversion', {
+          send_to: 'AW-11359790463/opDUCOjMo4UcEP_K4qgq',
+        });
+      }
     }
   };
 
