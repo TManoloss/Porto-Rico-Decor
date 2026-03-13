@@ -19,7 +19,7 @@ export async function sendEmail(formData: FormData) {
         secure: true,
         auth: {
             user: 'portoricoleads@gmail.com',
-            pass: 'Quimeras40*',
+            pass: 'ajzt wvyh gcdj aicn',
         },
     });
 
