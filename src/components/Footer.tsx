@@ -1,10 +1,26 @@
+'use client';
+
 import Image from 'next/image';
 import Link from 'next/link';
 import Logo2 from "@/PORTO RICO Visual/Porto Rico - Logotipo Secundário 01.png"
 
+declare global {
+  interface Window {
+    gtag?: (...args: unknown[]) => void;
+  }
+}
+
 export default function Footer() {
   const currentYear = new Date().getFullYear();
   const yearsInBusiness = currentYear - 2002;
+
+  const handleWhatsAppClick = () => {
+    if (typeof window !== 'undefined' && window.gtag) {
+      window.gtag('event', 'conversion', {
+        'send_to': 'AW-11359790463/T4HyCOXMo4UcEP_K4qgq'
+      });
+    }
+  };
 
   return (
     <footer className="bg-primary text-white pt-16 pb-8 border-t border-white/10">
@@ -50,7 +66,13 @@ export default function Footer() {
               <a href="https://www.instagram.com/portoricodecoracoes" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-secondary hover:text-primary transition-all duration-300">
                 <i className="fab fa-instagram"></i>
               </a>
-              <a href="https://wa.me/5511997525052" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-secondary hover:text-primary transition-all duration-300">
+              <a
+                href="https://wa.me/5511997525052"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={handleWhatsAppClick}
+                className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-secondary hover:text-primary transition-all duration-300"
+              >
                 <i className="fab fa-whatsapp"></i>
               </a>
             </div>
