@@ -12,16 +12,14 @@ export async function sendEmail(formData: FormData) {
         return { success: false, message: 'Por favor, preencha todos os campos obrigatórios.' };
     }
 
-    // Create a transporter using SMTP credentials or fallback to local MailDev
-    const isLocal = !process.env.SMTP_HOST || !process.env.SMTP_USER;
-
+    // Create a transporter using Gmail credentials hardcoded for production
     const transporter = nodemailer.createTransport({
-        host: process.env.SMTP_HOST || 'localhost',
-        port: parseInt(process.env.SMTP_PORT || (isLocal ? '1025' : '587')),
-        secure: process.env.SMTP_SECURE === 'true',
-        auth: isLocal ? undefined : {
-            user: process.env.SMTP_USER,
-            pass: process.env.SMTP_PASS,
+        host: 'smtp.gmail.com',
+        port: 465,
+        secure: true,
+        auth: {
+            user: 'portoricoleads@gmail.com',
+            pass: 'Quimeras40*',
         },
     });
 
