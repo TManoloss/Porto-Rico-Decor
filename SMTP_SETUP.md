@@ -1,9 +1,24 @@
 # Configuração de Envio de Email
 
-Para que o formulário de contato funcione, você precisa configurar as credenciais do servidor de email (SMTP).
+Para facilitar o desenvolvimento, o projeto agora conta com um servidor de email local (**MailDev**) que captura todas as mensagens enviadas pelo formulário.
+
+## Desenvolvimento Local (Sem Configuração)
+
+Você **não precisa** configurar nada para testar o envio de emails localmente:
+
+1. Execute o projeto com `npm run dev`.
+2. O MailDev iniciará automaticamente junto com o Next.js.
+3. Envie uma mensagem pelo formulário de contato.
+4. Acesse **[http://localhost:1080](http://localhost:1080)** no seu navegador para ver o email capturado.
+
+---
+
+## Produção ou Uso de Servidor Real
+
+Se você preferir usar um servidor de email real (como Gmail ou Outlook) ou estiver configurando a produção:
 
 1. Crie um arquivo chamado `.env.local` na raiz do projeto.
-2. Adicione as seguintes variáveis, substituindo pelos seus dados:
+2. Adicione as seguintes variáveis:
 
 ```env
 SMTP_HOST=smtp.seuprovedor.com

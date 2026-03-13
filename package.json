@@ -3,10 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "concurrently \"next dev\" \"npm run email\"",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "start:all": "concurrently \"next start\" \"npm run email\"",
+    "lint": "eslint",
+    "email": "maildev --smtp 1025 --web 1080"
   },
   "dependencies": {
     "next": "15.5.9",
@@ -21,8 +23,10 @@
     "@types/nodemailer": "^7.0.5",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "concurrently": "^9.2.1",
     "eslint": "^9",
     "eslint-config-next": "15.5.4",
+    "maildev": "^2.2.1",
     "tailwindcss": "^4",
     "typescript": "^5"
   }

@@ -12,15 +12,16 @@ export async function sendEmail(formData: FormData) {
         return { success: false, message: 'Por favor, preencha todos os campos obrigatórios.' };
     }
 
-    // Create a transporter using SMTP credentials from environment variables
-    // If variables are not set, this will fail gracefully or log an error
+    // Create a transporter using SMTP credentials or fallback to local MailDev
+    const isLocal = !process.env.SMTP_HOST || !process.env.SMTP_USER;
+
     const transporter = nodemailer.createTransport({
-        host: process.env.SMTP_HOST || 'smtp.example.com',
-        port: parseInt(process.env.SMTP_PORT || '587'),
-        secure: process.env.SMTP_SECURE === 'true', // true for 465, false for other ports
-        auth: {
-            user: process.env.SMTP_USER || 'user@example.com',
-            pass: process.env.SMTP_PASS || 'password',
+        host: process.env.SMTP_HOST || 'localhost',
+        port: parseInt(process.env.SMTP_PORT || (isLocal ? '1025' : '587')),
+        secure: process.env.SMTP_SECURE === 'true',
+        auth: isLocal ? undefined : {
+            user: process.env.SMTP_USER,
+            pass: process.env.SMTP_PASS,
         },
     });
 
