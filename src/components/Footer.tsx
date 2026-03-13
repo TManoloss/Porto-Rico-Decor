@@ -50,7 +50,7 @@ export default function Footer() {
               <a href="https://www.instagram.com/portoricodecoracoes" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-secondary hover:text-primary transition-all duration-300">
                 <i className="fab fa-instagram"></i>
               </a>
-              <a href="https://w.app/eiv9ta" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-secondary hover:text-primary transition-all duration-300">
+              <a href="https://wa.me/5511997525052" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-secondary hover:text-primary transition-all duration-300">
                 <i className="fab fa-whatsapp"></i>
               </a>
             </div>

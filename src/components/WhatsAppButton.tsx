@@ -3,12 +3,13 @@ import Link from 'next/link';
 export default function WhatsAppButton() {
     return (
         <Link
-            href="https://w.app/eiv9ta"
+            href="https://wa.me/5511997525052"
             target="_blank"
             rel="noopener noreferrer"
             className="fixed bottom-6 right-6 z-50 bg-primary hover:bg-primary-dark text-white p-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110 flex items-center justify-center group"
             aria-label="Fale conosco no WhatsApp"
         >
+
             <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="32"
